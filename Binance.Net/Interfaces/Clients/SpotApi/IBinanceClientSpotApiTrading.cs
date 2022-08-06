@@ -53,6 +53,36 @@ namespace Binance.Net.Interfaces.Clients.SpotApi
             CancellationToken ct = default);
 
         /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="symbol"></param>
+        /// <param name="side"></param>
+        /// <param name="type"></param>
+        /// <param name="quantity"></param>
+        /// <param name="quoteQuantity"></param>
+        /// <param name="price"></param>
+        /// <param name="timeInForce"></param>
+        /// <param name="stopPrice"></param>
+        /// <param name="icebergQty"></param>
+        /// <param name="trailingDelta"></param>
+        /// <param name="orderId"></param>
+        /// <param name="origClientOrderId"></param>
+        /// <param name="newClientOrderId"></param>
+        /// <param name="receiveWindow"></param>
+        /// <param name="ct"></param>
+        /// <returns></returns>
+        Task<WebCallResult<BinanceCancelReplaceOrder>> CancelAndReplaceAsync(string symbol, OrderSide side,
+            SpotOrderType type, decimal? quantity = null,
+            decimal? quoteQuantity = null,
+            decimal? price = null,
+            TimeInForce? timeInForce = null,
+            decimal? stopPrice = null,
+            decimal? icebergQty = null,
+            int? trailingDelta = null,
+            long? orderId = null, string? origClientOrderId = null, string? newClientOrderId = null, long? receiveWindow = null,
+            CancellationToken ct = default);
+
+        /// <summary>
         /// Places a new order
         /// <para><a href="https://binance-docs.github.io/apidocs/spot/en/#new-order-trade" /></para>
         /// </summary>

@@ -7290,6 +7290,27 @@
             <param name="ct">Cancellation token</param>
             <returns>Id's for the placed test order</returns>
         </member>
+        <member name="M:Binance.Net.Interfaces.Clients.SpotApi.IBinanceClientSpotApiTrading.CancelAndReplaceAsync(System.String,Binance.Net.Enums.OrderSide,Binance.Net.Enums.SpotOrderType,System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{Binance.Net.Enums.TimeInForce},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Int32},System.Nullable{System.Int64},System.String,System.String,System.Nullable{System.Int64},System.Threading.CancellationToken)">
+            <summary>
+            
+            </summary>
+            <param name="symbol"></param>
+            <param name="side"></param>
+            <param name="type"></param>
+            <param name="quantity"></param>
+            <param name="quoteQuantity"></param>
+            <param name="price"></param>
+            <param name="timeInForce"></param>
+            <param name="stopPrice"></param>
+            <param name="icebergQty"></param>
+            <param name="trailingDelta"></param>
+            <param name="orderId"></param>
+            <param name="origClientOrderId"></param>
+            <param name="newClientOrderId"></param>
+            <param name="receiveWindow"></param>
+            <param name="ct"></param>
+            <returns></returns>
+        </member>
         <member name="M:Binance.Net.Interfaces.Clients.SpotApi.IBinanceClientSpotApiTrading.PlaceOrderAsync(System.String,Binance.Net.Enums.OrderSide,Binance.Net.Enums.SpotOrderType,System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.String,System.Nullable{System.Decimal},System.Nullable{Binance.Net.Enums.TimeInForce},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{Binance.Net.Enums.OrderResponseType},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Threading.CancellationToken)">
             <summary>
             Places a new order
@@ -14077,6 +14098,11 @@
         <member name="P:Binance.Net.Objects.Models.Spot.BinanceC2CUserTrade.AdvertisementRole">
             <summary>
             Advertisement role
+            </summary>
+        </member>
+        <member name="T:Binance.Net.Objects.Models.Spot.BinanceCancelReplaceOrder">
+            <summary>
+            The result of placing a new order
             </summary>
         </member>
         <member name="T:Binance.Net.Objects.Models.Spot.BinanceConvertTrade">
